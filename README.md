@@ -11,10 +11,13 @@ In this project, we will do some data analysis and presentation to explore what 
 
 For this project, we use some movie-related data from:
 
-*Box Office Mojo
-*IMDB
-*Rotten Tomatoes
-*TheMovieDB.org
+* Box Office Mojo
+
+* IMDB
+
+* Rotten Tomatoes
+
+* TheMovieDB.org
 
 
 ## Project Breakdown
