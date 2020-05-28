@@ -1,4 +1,8 @@
-# Module 1 Final Project Specifications
+
+# Film Industry Analysis 
+
+
+## Project Summary 
 
 In this project, we will do some data analysis and presentation to explore what type of movies are currently doing the best at the box office and translate those findings into actionable insights that our client can use when deciding what type of movies they should produce.
 
@@ -13,55 +17,87 @@ For this project, we use some movie-related data from:
 *TheMovieDB.org
 
 
+## Project Breakdown
+
+1. Importing available data:
+
+2. Cleaning data
+
+3. Creating/joining different dataframes to combine multiple data sets.
+
+4. Creating graphs to display the analysis outcomes
+
+
 ## Insights
 
-Q1: Categorize the top popular/profitable movies based on their genres.
+1. The top 100 popular/profitable movies based on their genres.
 
-Q2: Find the film-crew for the top profitable movies.
+![alt text](https://github.com/FarnazG/project001/blob/master/images/genre-counts.png)
 
-Q3: Categorize the top popular/profitable genres based on their investment budget.
+2. The most profitable genres based on investment budgets.
 
-Q4: Categorize the top popular/profitable genres based on their film crew.
+![alt text](https://github.com/FarnazG/project001/blob/master/images/movie-budgets.png)
 
-Q5: With the available budget for our movie investment, what genre and what crew would be the best choice.
+3. The top 20 popular and profitable movies based on their film-crew.
 
+![alt text](https://github.com/FarnazG/project001/blob/master/images/crew-popularity.png)
 
-## Technical Aspect
+4. The top 10 popular movies from 2010 to 2018:
 
-To get to the question 5 which is the most practical result of our data analysis for our client, we need to answer all other questions by exploring our data sets, joining different tables and creating graphs.
-
-1. In this project, Pandas DataFrame and matplotlib are **mainly** used for exploring and visualizing data.
-
-2. Importing available data:
-
-Use glob to import all the csv files:
-
-```python
-csv_files = glob("zippedData\\*.csv.gz")
-```
-
-3. Exploring data:
-
-Creating dataframe from each file:
-
-```python
-df(i) = pd.read_csv(csv_files[i])
-```
-
-4. Getting basic information about each data frame.
-
-5. Employing different data manipulation methods to clean  dataframes/tables,
-
-6. Creating/joining different dataframes to combine multiple data sets.
-
-7. Creating graphs to display the analysis outcomes,
-
-![alt text](https://github.com/FarnazG/dsc-mod-1-project-v2-1-online-ds-ft-120919/blob/master/graphs/image.png "movie-budget")
+![alt text](https://github.com/FarnazG/project001/blob/master/images/popularity-rate.png)
 
 
-According to this plot, for low budget movies(up to $ 40000000) **drama** is the recommended choice of genre, while for the higher budget movies **action** is the best choice.
+## Recommendations
+
+With the available budget for our movie investment, what genre and what crew would be the best choice?
+
+According to our plots, best movie-genres to produce based on investment budget:
+
+Budget 0 : $ 1400.0 to $ 4.55 million
+
+1. Comedy
+
+2. Documentary
+
+3. Horror  
 
 
-The most popular film-crew for top 20 profitable movies:
+Budget 1 : $ 4.55 m to $ 16 million
 
-![alt text](https://github.com/FarnazG/dsc-mod-1-project-v2-1-online-ds-ft-120919/blob/master/graphs/image.png "film-crew")
+1.Drama
+
+2.Comedy
+
+3.Thriller
+
+
+Budget 2 : $ 16 m to $ 40 million
+
+1.Drama 
+
+2.Comedy
+
+3.Action 
+
+
+Budget 3 : $ 40 m to $ 425 million
+
+1.Action
+
+2.Adventure
+
+3.Drama
+
+
+## Non-technical Presentation
+
+[film-industry-analysis-presentation](https://github.com/FarnazG/project001/blob/master/FilmIndustryAnalysisPresentation.pdf)
+
+
+## Further Analysis
+
+1. Collecting more data from new resources and extract new features for better decision-making.
+
+2. Applying statistical analysis to determine whether there are trends between various movie data sets, and  recognize the corresponding patterns.
+
+3. Applying temporal analysis on the movie data sets to determine the ongoing change of movies’ popularity in different generations, which will help predict the future trends for better investments.
